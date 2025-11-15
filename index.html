@@ -5,7 +5,60 @@
   <title>我的个人主页</title>
 </head>
 <body>
-  <h1>你好，这是我的个人网站</h1>
-  <p>在这里写你的简介、项目、联系方式……</p>
+  <!-- 顶部标题 -->
+  <header>
+    <h1>你好，这是我的个人网站</h1>
+    <p>这里可以简单介绍你自己，比如：学校/专业/研究方向 或 工作职位等。</p>
+  </header>
+
+  <!-- 简介 -->
+  <section id="about">
+    <h2>关于我</h2>
+    <p>
+      在这里写你的背景介绍、兴趣方向、正在做的事情等。
+      比如：我是 XX 大学的研究生，研究方向是 XXX，目前主要关注 YYY。
+    </p>
+  </section>
+
+  <!-- 项目/论文/作品 -->
+  <section id="projects">
+    <h2>项目 / 论文 / 作品</h2>
+    <ul>
+      <li>项目 A：一句话描述这个项目是做什么的。</li>
+      <li>项目 B：一句话描述这个项目是做什么的。</li>
+      <!-- 需要的话继续往下加 <li>...</li> -->
+    </ul>
+  </section>
+
+  <!-- 文件下载（PDF 等） -->
+  <section id="files">
+    <h2>文件下载</h2>
+    <p>
+      <!-- 把 cv.pdf 换成你实际上传的文件名 -->
+      <a href="./files/cv.pdf" target="_blank">下载我的简历（PDF）</a>
+    </p>
+
+    <!-- 如果你还有其他 PDF，可以照着往下加：
+    <p><a href="./files/paper1.pdf" target="_blank">下载论文 1（PDF）</a></p>
+    <p><a href="./files/paper2.pdf" target="_blank">下载论文 2（PDF）</a></p>
+    -->
+  </section>
+
+  <!-- 可选：在线预览 PDF -->
+  <section id="preview">
+    <h2>在线预览我的简历</h2>
+    <!-- 注意：这里同样假设文件路径是 ./files/cv.pdf -->
+    <iframe src="./files/cv.pdf" width="100%" height="600px"></iframe>
+  </section>
+
+  <!-- 联系方式 -->
+  <section id="contact">
+    <h2>联系方式</h2>
+    <p>Email：yourname@example.com</p>
+    <!-- 如果有其他社交账号可以加在这里：
+    <p>GitHub：<a href="https://github.com/你的用户名" target="_blank">https://github.com/你的用户名</a></p>
+    <p>微信：XXXXXXX</p>
+    -->
+  </section>
 </body>
 </html>
